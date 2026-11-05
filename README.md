@@ -1,29 +1,43 @@
 # Mohd Shabaz — React Portfolio
 
-A responsive developer portfolio built with **React 18** and **Vite**. It presents About Me, Skills, Projects, Resume/Education, Certifications and Contact sections.
+A responsive developer portfolio built with **React 18** and **Vite**. It showcases my profile, technical skills, projects, education, certifications, resume and contact information.
 
-## Live website and repository
+## Live Website and Profiles
 
-- Live portfolio:  Live portfolio: https://mohd-shahbaz-portfolio.vercel.app/
-- GitHub profile: https://github.com/moshahbaz18
-- MemoryFlip project: https://github.com/moshahbaz18/MemoryFlip
-- LinkedIn profile: https://linkedin.com/in/mohd-shahab-879a482b1
+- **Live Portfolio:** https://mohd-shahbaz-react-portfolio.vercel.app/
+- **GitHub Profile:** https://github.com/moshahbaz18
+- **LinkedIn Profile:** https://linkedin.com/in/mohd-shahab-879a482b1
+- **MemoryFlip Project:** https://github.com/moshahbaz18/MemoryFlip
+- **GitHub Repository:** https://github.com/moshahbaz18/mohd-shahbaz-react-portfolio
 
-> Update the live URL or repository URL if you deploy this project under a different address or repository.
+## Technology Stack
 
-## Technology stack
+- React 18 — Reusable UI components
+- Vite — Development server and production bundler
+- JavaScript — Application functionality
+- CSS3 — Responsive styling and layouts
+- Lucide React — Interface icons
 
-- React 18 — reusable UI components
-- Vite — development server and production bundler
-- Lucide React — interface icons
-- CSS3 — responsive layout, effects and mobile navigation
+## Features
 
-## Project structure
+- Responsive portfolio design
+- About Me section
+- Technical Skills section
+- Projects showcase
+- Resume and Education section
+- Certifications section
+- Contact information and social links
+- Resume viewing and downloading
+- Mobile-friendly navigation
+
+## Project Structure
 
 ```text
-mohd-shahbaz-portfolio/
+mohd-shahbaz-react-portfolio/
 ├── public/
-│   └── (put resume.pdf here)
+│   ├── profile.jpeg
+│   ├── resume.pdf
+│   └── memoryflip-preview.svg
 ├── src/
 │   ├── sections/
 │   │   ├── About.jsx
@@ -36,94 +50,112 @@ mohd-shahbaz-portfolio/
 │   └── styles.css
 ├── index.html
 ├── package.json
+├── package-lock.json
 ├── vite.config.js
 └── README.md
 ```
 
-## Run locally
+## Run Locally
 
-Install Node.js (LTS), then open a terminal in the project folder:
+Make sure Node.js (LTS) is installed.
+
+Open the project folder in your terminal and run:
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open the local URL printed by Vite (normally `http://localhost:5173`).
+Open the local URL displayed in the terminal.
 
-## Production optimization
+## Production Build
 
-The app uses React `lazy()` and `Suspense` to load the About, Skills, Projects, Resume and Contact section modules on demand. The MemoryFlip project preview is a lightweight local SVG and uses `loading="lazy"` with descriptive `alt` text. Use the same pattern for any additional below-the-fold images.
-
-Vite production build settings enable:
-- JavaScript minification with esbuild
-- CSS minification
-- Production asset bundling and hashed filenames
-- No source maps in the production build
-
-Create the production build:
+Create an optimized production build:
 
 ```bash
 npm run build
 ```
 
-Vite writes optimized files to `dist/`.
+Vite generates the production files inside the `dist/` folder.
 
-Preview the production build locally:
+To preview the production build locally:
 
 ```bash
 npm run preview
 ```
 
-Open the preview URL printed by Vite (normally `http://localhost:4173`) and test all navigation links, project links, email/phone links and resume actions.
+Open the preview URL displayed in the terminal.
 
-## Add your resume PDF
+## Production Optimization
 
-Copy your latest resume PDF into the `public` folder and name it exactly:
+The project uses Vite production build optimization, including:
+
+- JavaScript minification with esbuild
+- CSS minification
+- Optimized production assets
+- Hashed asset filenames
+- Separate JavaScript chunks for imported modules
+
+## Resume
+
+The resume PDF is available in the `public` folder:
 
 ```text
 public/resume.pdf
 ```
 
-The View Resume and Download PDF links point to `/resume.pdf`. 
+The portfolio provides options to view and download the resume.
 
 ## Deploy to Vercel
 
-1. Create a GitHub repository, for example `mohd-shahbaz-react-portfolio`.
-2. Upload/commit all project files to the repository (do not upload `node_modules` or `dist`).
-3. Sign in to [Vercel](https://vercel.com/) and choose **Add New → Project**.
-4. Import the GitHub repository.
-5. Vercel should detect Vite automatically. Confirm:
-   - Framework preset: Vite
-   - Build command: `npm run build`
-   - Output directory: `dist`
-6. Select **Deploy**.
-7. Open the generated Vercel URL and test the deployed site.
-8. Optional custom domain: open the project **Settings → Domains**, add a domain you own and follow the DNS instructions shown by Vercel. Vercel provisions SSL after DNS verification; do not add a domain you do not own.
+This portfolio is deployed using Vercel.
 
-## Testing checklist
+To deploy your own copy:
 
-Record the actual test results before submitting the assignment:
+1. Create a GitHub repository.
+2. Upload the project source files.
+3. Sign in to [Vercel](https://vercel.com/).
+4. Select **Add New → Project**.
+5. Import your GitHub repository.
+6. Confirm the following settings:
 
-- [ ] `npm run build` completes without errors.
-- [ ] `npm run preview` opens the production build locally.
-- [ ] Header links scroll to the correct sections.
-- [ ] Mobile navigation opens, closes and navigates correctly.
-- [ ] GitHub, email and phone links work.
-- [ ] Resume opens/downloads after `public/resume.pdf` is added.
-- [ ] Layout checked at mobile, tablet and desktop widths.
-- [ ] Tested in Chrome, Firefox, Edge and Safari where available.
-- [ ] Deployed Vercel URL opens over HTTPS.
+   - Framework Preset: Vite
+   - Build Command: `npm run build`
+   - Output Directory: `dist`
 
-## Challenges and solutions
+7. Click **Deploy**.
+8. Open the generated website URL and test the application.
+
+## Testing Checklist
+
+- [ ] Production build completes without errors.
+- [ ] Portfolio opens correctly.
+- [ ] Navigation links work correctly.
+- [ ] Mobile navigation works correctly.
+- [ ] Project links open correctly.
+- [ ] GitHub and LinkedIn links work.
+- [ ] Email and phone links work.
+- [ ] Resume opens and downloads correctly.
+- [ ] Layout works on mobile, tablet and desktop.
+- [ ] Deployed website opens over HTTPS.
+
+## Challenges and Solutions
 
 | Challenge | Solution |
 |---|---|
-| Keeping the portfolio usable on small screens | Added responsive CSS breakpoints and a collapsible mobile navigation. |
-| Avoiding a large initial JavaScript download | Split page sections into lazy-loaded React modules using `React.lazy()` and `Suspense`. |
-| Improving production asset delivery | Configured Vite to minify JavaScript and CSS and generate optimized assets. |
-| Resume file may not exist in a fresh checkout | Documented the exact `public/resume.pdf` location and filename required. |
+| Responsive design | Implemented responsive CSS layouts and mobile navigation. |
+| Reusable components | Organized the portfolio into separate React components. |
+| Production performance | Used Vite production build optimization and asset bundling. |
+| Resume accessibility | Added resume viewing and downloading functionality. |
 
-## Personalization notes
+## Authorha 
 
-The portfolio content is based on the details supplied for this assignment. Please review your name spelling, contact information, education dates, certification titles and external profile URLs before publishing.
+**Mohd Shabaz**
+
+- GitHub: https://github.com/moshahbaz18
+- LinkedIn: https://linkedin.com/in/mohd-shahab-879a482b1
+- Email: mshahabaz376@gmail.com
+
+---
+
+Thank you for visiting my portfolio!
