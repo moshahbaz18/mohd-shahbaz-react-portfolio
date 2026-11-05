@@ -4,9 +4,10 @@ A responsive developer portfolio built with **React 18** and **Vite**. It presen
 
 ## Live website and repository
 
-- Live portfolio: https://mohd-shahbaz-portfolio.vercel.app/
+- Live portfolio:  Live portfolio: https://mohd-shahbaz-portfolio.vercel.app/
 - GitHub profile: https://github.com/moshahbaz18
 - MemoryFlip project: https://github.com/moshahbaz18/MemoryFlip
+- LinkedIn profile: https://linkedin.com/in/mohd-shahab-879a482b1
 
 > Update the live URL or repository URL if you deploy this project under a different address or repository.
 
@@ -84,11 +85,11 @@ Copy your latest resume PDF into the `public` folder and name it exactly:
 public/resume.pdf
 ```
 
-The View Resume and Download PDF links point to `/resume.pdf`. Until you add this file, those links will return a not-found page.
+The View Resume and Download PDF links point to `/resume.pdf`. 
 
 ## Deploy to Vercel
 
-1. Create a GitHub repository, for example `mohd-shahbaz-portfolio`.
+1. Create a GitHub repository, for example `mohd-shahbaz-react-portfolio`.
 2. Upload/commit all project files to the repository (do not upload `node_modules` or `dist`).
 3. Sign in to [Vercel](https://vercel.com/) and choose **Add New → Project**.
 4. Import the GitHub repository.
@@ -125,4 +126,4 @@ Record the actual test results before submitting the assignment:
 
 ## Personalization notes
 
-The portfolio content is based on the details supplied for this assignment. Please review your name spelling, contact information, education dates, certification titles and external profile URLs before publishing. The LinkedIn link is a generic LinkedIn landing page until you replace it with your personal profile URL.
+The portfolio content is based on the details supplied for this assignment. Please review your name spelling, contact information, education dates, certification titles and external profile URLs before publishing.
