@@ -216,11 +216,13 @@ export default function App() {
         </section>
 
         {/* OTHER PORTFOLIO SECTIONS */}
-        <DeferredSection component={About} />
-        <DeferredSection component={Skills} />
-        <DeferredSection component={Projects} />
-        <DeferredSection component={Resume} />
-        <DeferredSection component={Contact} />
+        <Suspense fallback={<SectionLoader />}>
+  <About />
+  <Skills />
+  <Projects />
+  <Resume />
+  <Contact />
+</Suspense>
       </main>
 
       {/* FOOTER */}
