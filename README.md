@@ -128,16 +128,16 @@ To deploy your own copy:
 
 ## Testing Checklist
 
-- [ ] Production build completes without errors.
-- [ ] Portfolio opens correctly.
-- [ ] Navigation links work correctly.
-- [ ] Mobile navigation works correctly.
-- [ ] Project links open correctly.
-- [ ] GitHub and LinkedIn links work.
-- [ ] Email and phone links work.
-- [ ] Resume opens and downloads correctly.
-- [ ] Layout works on mobile, tablet and desktop.
-- [ ] Deployed website opens over HTTPS.
+- [✅] Production build completes without errors.
+- [✅] Portfolio opens correctly.
+- [✅] Navigation links work correctly.
+- [✅] Mobile navigation works correctly.
+- [✅] Project links open correctly.
+- [✅] GitHub and LinkedIn links work.
+- [✅] Email and phone links work.
+- [✅] Resume opens and downloads correctly.
+- [✅] Layout works on mobile, tablet and desktop.
+- [✅] Deployed website opens over HTTPS.
 
 ## Challenges and Solutions
 
